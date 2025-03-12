@@ -50,8 +50,8 @@ else:
     days_since = (game_date_ts - min_date).days
 
     # Suppose team1_input is a list of two player names for team1
-    team1_sorted = sorted(team1_input)
-    team2_sorted = sorted(team2_input)
+    team1_sorted = sorted(team1)
+    team2_sorted = sorted(team2)
 
     # Use these sorted lists in your DataFrame
     input_df = pd.DataFrame({
