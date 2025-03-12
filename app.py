@@ -205,10 +205,10 @@ with tab1:
             # Determine winner for visual indication
             if team1_win_prob > team2_win_prob:
                 col1.markdown(f"<div style='padding: 10px; background-color: rgba(0, 255, 0, 0.2); border-radius: 5px;'><h3>{team1_label}</h3><h2>{team1_win_prob:.1f}%</h2><p>Predicted Winner</p></div>", unsafe_allow_html=True)
-                col2.markdown(f"<div style='padding: 10px; background-color: #f0f2f6; border-radius: 5px;'><h3>{team2_label}</h3><h2>{team2_win_prob:.1f}%</h2></div>", unsafe_allow_html=True)
+                col2.markdown(f"<div style='padding: 10px; background-color: #e06666; border-radius: 5px;'><h3>{team2_label}</h3><h2>{team2_win_prob:.1f}%</h2></div>", unsafe_allow_html=True)
                 winner = team1_label
             else:
-                col1.markdown(f"<div style='padding: 10px; background-color: #f0f2f6; border-radius: 5px;'><h3>{team1_label}</h3><h2>{team1_win_prob:.1f}%</h2></div>", unsafe_allow_html=True)
+                col1.markdown(f"<div style='padding: 10px; background-color: #e06666; border-radius: 5px;'><h3>{team1_label}</h3><h2>{team1_win_prob:.1f}%</h2></div>", unsafe_allow_html=True)
                 col2.markdown(f"<div style='padding: 10px; background-color: rgba(0, 255, 0, 0.2); border-radius: 5px;'><h3>{team2_label}</h3><h2>{team2_win_prob:.1f}%</h2><p>Predicted Winner</p></div>", unsafe_allow_html=True)
                 winner = team2_label
             
