@@ -49,12 +49,16 @@ else:
     game_date_ts = pd.Timestamp(game_date)
     days_since = (game_date_ts - min_date).days
 
-    # Prepare the input DataFrame for the model
+    # Suppose team1_input is a list of two player names for team1
+    team1_sorted = sorted(team1_input)
+    team2_sorted = sorted(team2_input)
+
+    # Use these sorted lists in your DataFrame
     input_df = pd.DataFrame({
-        'player1Name': [team1[0]],
-        'player2Name': [team1[1]],
-        'player3Name': [team2[0]],
-        'player4Name': [team2[1]],
+        'player1Name': [team1_sorted[0]],
+        'player2Name': [team1_sorted[1]],
+        'player3Name': [team2_sorted[0]],
+        'player4Name': [team2_sorted[1]],
         'days_since': [days_since]
     })
 
